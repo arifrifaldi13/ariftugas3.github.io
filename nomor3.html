@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ubah Text, Warna, dan Warna Latar Belakang</title>
+</head>
+<body>
+
+<h1 id="judul">Ini adalah judul</h1>
+<p id="paragraf">Ini adalah paragraf</p>
+
+<button onclick="ubahTextDanWarna()">Ubah Text, Warna, dan Warna Latar Belakang</button>
+
+<script>
+function ubahTextDanWarna() {
+  // Mengubah textContent
+  document.getElementById("judul").textContent = "Judul telah diubah";
+  document.getElementById("paragraf").textContent = "Paragraf telah diubah";
+
+  // Mengubah warna teks dan latar belakang
+  document.getElementById("judul").style.color = "blue";
+  document.getElementById("paragraf").style.color = "green";
+  document.body.style.backgroundColor = "lightgray";
+}
+</script>
+
+</body>
+</html>

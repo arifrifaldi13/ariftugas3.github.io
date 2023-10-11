@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person {
+    constructor(id, nama, umur, kelas) {
+      this.id = id;
+      this.nama = nama;
+      this.umur = umur;
+      this.kelas = kelas;
+    }
+  }
+  
+  // Membuat objek-objek
+  const person1 = new Person(1, 'agus', 25, 'A');
+  const person2 = new Person(2, 'badri', 30, 'B');
+  const person3 = new Person(3, 'sulis', 28, 'C');
+  
+  // Menyimpan objek-objek ke dalam array
+  const peopleArray = [person1, person2, person3];
+  
+  // Contoh akses properti objek dalam array
+  console.log(peopleArray[0].nama); // Output: John Doe
+  console.log(peopleArray[1].umur); // Output: 30
+  
+    </script>
+</body>
+</html>
